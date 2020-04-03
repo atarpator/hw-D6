@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    
+    
+    <title>Личная библиотека.</title>    
+</head>
+
+<body>
+    <header>
+        <div class="wrapperout">
+            <h1>Сайт личной библиотеки</h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapperout">       
+            <div class="wrapperin">
+                <div class="header2">
+                    {% block extra_header %}{% endblock extra_header %}
+                    <a href="/" class="btn btn-success btn-lg">Меню</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapperout">
+            {% block main_content %}
+            {% endblock main_content %}
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>

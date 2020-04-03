@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block extra_header %}
+    Меню
+{% endblock extra_header %}
+
+{% block main_content %}    
+    <div class="wrapperin">            
+        <a href="index/" class="btn btn-primary btn-sm">Список книг</a>            
+        <a href="pubs/" class="btn btn-primary btn-sm">Издательства</a>            
+        <a href="p_library/authors" class="btn btn-primary btn-sm">Авторы</a>            
+        <a href="p_library/author/create" class="btn btn-primary btn-sm">Добавить автора</a>                    
+        <a href="p_library/friends" class="btn btn-primary btn-sm">Друзья</a>            
+        <a href="p_library/friend/create" class="btn btn-primary btn-sm">Добавить друга</a>            
+        <a href="p_library/lended" class="btn btn-primary btn-sm">Одолженные книги</a>            
+        <a href="p_library/lend_return" class="btn btn-primary btn-sm">Одолжить или вернуть книгу</a>            
+    </div>    
+{% endblock main_content %}
